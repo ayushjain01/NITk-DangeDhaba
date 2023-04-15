@@ -41,7 +41,7 @@ export default function withAction() {
 
   return (
     <>
-      <Box bg={useColorModeValue('#CBF3F0', '')} px={4}>
+      <Box bg={useColorModeValue('#262627')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -55,6 +55,7 @@ export default function withAction() {
             <HStack
               as={'nav'}
               spacing={4}
+              color = "white"
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
