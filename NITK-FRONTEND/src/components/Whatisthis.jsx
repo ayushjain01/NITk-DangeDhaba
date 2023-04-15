@@ -9,6 +9,9 @@ import {
   Flex,
   Spacer,
   Center,
+  Show,
+  Hide,
+  HStack
 } from "@chakra-ui/react";
 import { BiChevronRight } from "react-icons/bi";
 import { useState, useEffect } from "react";
@@ -48,14 +51,15 @@ const Whatisthis = ({ ...rest }) => {
   const loopingText2 = useLoopingText(texts2, 5000);
   const imageSlide = useLoopingText(imagePath, 5000);
   return (
-    <Box bg="#262627" height="100vh" py="10" color="white">
+    <Box bg="#262627" height="100vh" py="10" color="white"  >
       <Flex alignItems="center">
         <Spacer />
+        <Hide breakpoint='(max-width: 786px)'>
         <Heading
           float="left"
           className="typeWriter"
           as="h1"
-          fontSize="5xl"
+          fontSize={"5xl"}
           maxW={{ base: "lg", md: "xl", lg: "4xl" }}
         >
           {loopingText1}
@@ -75,11 +79,48 @@ const Whatisthis = ({ ...rest }) => {
           className="imageAnimate"
           position="relative"
           float="right"
-          width="600px"
+          width={["400px","600px"]}
           px="14"
           src={imageSlide}
         />
+        </Hide>
+        <Show breakpoint='(max-width: 780px)'>
+          <VStack>
+          <Heading
+          as="h1"
+          display={"block"}
+          padding={4}
+          fontSize={"5xl"}
+          maxW={{ base: "lg", md: "xl", lg: "4xl" }}
+        >
+          {loopingText1}
+          <br />
+          <span
+            style={{
+              background:
+                "linear-gradient(135deg, #fb5607,#ffbe0b,#ff006e, #3a86ff,#2EC4B6)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            {loopingText2}
+          </span>
+        </Heading>
+        <Image
+        position={'absolute'}
+        top={'40vh'}
+          className="imageAnimate"
+          display={"block"}
+          width={["500px","600px"]}
+          px="14"
+          src={imageSlide}
+        />
+          </VStack>
+        
+        </Show>
+
       </Flex>
+      <Box position={'absolute'} top={'90vh'} w={'100vw'}>
       <Center>
         <Link href = "#"> <Button rightIcon={<BiChevronRight />} bg="#2EC4B6"> 
           Start Learning
@@ -98,6 +139,7 @@ const Whatisthis = ({ ...rest }) => {
         </Button>
         </Link>
       </Center>
+      </Box>
     </Box>
   );
 };
