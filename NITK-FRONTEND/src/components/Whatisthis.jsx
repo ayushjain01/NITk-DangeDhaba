@@ -1,7 +1,18 @@
-import { Box, Button, Heading, HStack, Text, VStack } from "@chakra-ui/react"
+import {
+  Box,
+  Button,
+  Heading,
+  Link,
+  Text,
+  VStack,
+  Image,
+  Flex,
+  Spacer,
+  Center,
+} from "@chakra-ui/react";
 import { BiChevronRight } from "react-icons/bi";
 import { useState, useEffect } from "react";
-
+import "./style.css";
 
 function useLoopingText(texts, interval) {
   const [textIndex, setTextIndex] = useState(0);
@@ -17,40 +28,78 @@ function useLoopingText(texts, interval) {
   return texts[textIndex];
 }
 
-const Whatisthis = ({...rest}) => {
-    const [showVideo, setShowVideo] = useState(false);
+const Whatisthis = ({ ...rest }) => {
+  const [showVideo, setShowVideo] = useState(false);
 
-    const texts1 = ["Million Fans, 22 players, 1 ball ", "Countless emotions, Infinite ", "Football - The Beautiful "];
-    const texts2 =["90 Minutes","Possibilities","Game"];
-    const loopingText1 = useLoopingText(texts1, 5000);
-    const loopingText2 = useLoopingText(texts2, 5000);
-    return ( 
-        <Box bg="#262627" height="100vh" py='10'>
-            <VStack color="white" textAlign='center' spacing='10' py='28'>
-                <Heading 
-                    as='h1'
-                    fontSize='6xl' 
-                    maxW={{base:'lg',md:'xl',lg:'4xl'}}>
-                    {loopingText1}<br/>
-                    <span style={{ background: 'linear-gradient(135deg,#0b6ec5,#5e49af,#f35815,#fed54a)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
-                        {loopingText2}
-                    </span> 
-                </Heading>
-                {/* </Box> */}
-                <Text color="whiteAlpha.600" fontSize='3xl' >
-                    It is Home
-                </Text>
-                <HStack spacing='6'>
-                    <Button rightIcon={<BiChevronRight/>} colorScheme='purple'>Get Started</Button>
-                    <Button variant='outline' borderColor='purple' _hover={{
-                        backgroundColor:"White"
-                        ,textColor:"black"
-                    }}>Sign in</Button>
-                </HStack>
-            </VStack>
-        </Box>
+  const texts1 = [
+    "Engage, interact,",
+    "Learn beyond",
+    "Progress to",
+    "Augmented",
+  ];
+  const texts2 = ["and learn", "the definitions", "the next level", "learning"];
+  const imagePath = [
+    "./src/assets/Landing/1.webp",
+    "./src/assets/Landing/2.webp",
+    "./src/assets/Landing/3.png",
+    "./src/assets/Landing/4.png",
+  ];
+  const loopingText1 = useLoopingText(texts1, 5000);
+  const loopingText2 = useLoopingText(texts2, 5000);
+  const imageSlide = useLoopingText(imagePath, 5000);
+  return (
+    <Box bg="#262627" height="100vh" py="10" color="white">
+      <Flex alignItems="center">
+        <Spacer />
+        <Heading
+          float="left"
+          className="typeWriter"
+          as="h1"
+          fontSize="5xl"
+          maxW={{ base: "lg", md: "xl", lg: "4xl" }}
+        >
+          {loopingText1}
+          <br />
+          <span
+            style={{
+              background:
+                "linear-gradient(135deg, #fb5607,#ffbe0b,#ff006e, #3a86ff,#2EC4B6)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            {loopingText2}
+          </span>
+        </Heading>
+        <Image
+          className="imageAnimate"
+          position="relative"
+          float="right"
+          width="600px"
+          px="14"
+          src={imageSlide}
+        />
+      </Flex>
+      <Center>
+        <Link href = "#"> <Button rightIcon={<BiChevronRight />} bg="#2EC4B6"> 
+          Start Learning
+        </Button></Link>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <Link href = "https://github.com/ayushjain01/NITK-Frontend"isExternal>
+        <Button
+          variant="outline"
+          borderColor="#2EC4B6"
+          _hover={{
+            backgroundColor: "White",
+            textColor: "black",
+          }}
+        >
+          View Code
+        </Button>
+        </Link>
+      </Center>
+    </Box>
+  );
+};
 
-     );
-}
- 
 export default Whatisthis;
