@@ -1,12 +1,13 @@
 import React from 'react';
-import {Navbar,Whatisthis,Subjects,Dhabawale} from '../components'
+import {Navbar,Whatisthis,SubjectsBox,Subjects,Dhabawale} from '../components'
 
 const LandingPage = () => {
     return ( 
         <div className="LandingPage">
             <Navbar />
             <Whatisthis />
-            <Subjects />
+            {/* <Subjects /> */}
+            <SubjectsBox />
             <Dhabawale />
         </div>
      );
