@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar,Whatisthis,Subjects,Dhabawale} from '../components'
+import {Navbar,Whatisthis,SubjectsBox, Subjects,Dhabawale} from '../components'
 
 const LandingPage = () => {
     return ( 
@@ -7,7 +7,9 @@ const LandingPage = () => {
             <Navbar />
             <Whatisthis />
             <Subjects />
+            <SubjectsBox/>
             <Dhabawale />
+            
         </div>
      );
 }
