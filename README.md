@@ -41,7 +41,7 @@ git clone https://github.com/ayushjain01/NITk-DangeDhaba.git
 #### ps. We suggest you open the deployed link on your phone, since you require a camera, but even a laptop with a webcam will work.
 You also require a second device (preferrably a laptop), to test the AR Experience.
 
-1. Once you've completing installing all dependencies, open your browser and choose any of the following subjects. Alternativeliy you can also visit - <link> on your mobile.
+1. Once you've completing installing all dependencies, open your browser and choose any of the following subjects. Alternativeliy you can also visit - https://ni-tk-dange-dhaba.vercel.app/ on your mobile.
  
  <p><img align = "center" src = "https://user-images.githubusercontent.com/67141217/232273229-ee6eaa68-e5c4-4e7a-8e75-08a6e32f5d19.png" height="77.28%" width = "100% alt = "Something is Wrong"/></p>
 
@@ -57,19 +57,19 @@ You also require a second device (preferrably a laptop), to test the AR Experien
     <td><h4>Image<h4></td>
  </tr>
  <tr>
- <td> Physics </td>
+ <td> Chemistry </td>
   <td><p>
   <img src = "https://user-images.githubusercontent.com/67141217/232272874-13d8da93-a67c-4e8c-a8a1-4381e2ba9e03.png" height = "80" title = "Physics">
   </p></td></tr>
-   <td> Chemistry </td>
+   <td> Biology </td>
   <td><p>
   <img src = "https://user-images.githubusercontent.com/67141217/232272900-57f4a190-0a48-439f-b691-3dce91125978.png" height = "80" title = "Chemistry">
   </p></td></tr>
-  <td> Biology </td>
+  <td> History </td>
   <td><p>
   <img src = "https://user-images.githubusercontent.com/67141217/232272923-22970d1e-fcf9-4323-a0d4-045c03bee872.png" height = "80" title = "Biology"> <nbsp>
   </p></td></tr>
-  <td> History </td>
+  <td> Physics </td>
   <td><p>
   <img src = "https://user-images.githubusercontent.com/67141217/232272929-d3146710-f708-4ab1-aeb9-ffd55abd34dc.png" height = "80" title = "History"> <nbsp>
   </p></td></tr>
