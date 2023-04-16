@@ -12,6 +12,7 @@ import {
   CardBody,
   CardFooter,
   Image,
+  Spacer
 } from "@chakra-ui/react";
 import "./style.css";
 
@@ -177,6 +178,7 @@ const Subjects = () => {
           </Flex>
         </Container>
       </Box>
+      <Spacer h={45}/>
     </>
   );
 };

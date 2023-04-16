@@ -1,4 +1,4 @@
-import { Box, Link, Image, Text, Tooltip } from "@chakra-ui/react";
+import { Box, Link, Image, Text, Tooltip, Spacer } from "@chakra-ui/react";
 import { Heading } from "@chakra-ui/layout";
 import Apples from "../assets/Apples.jpeg";
 import AmanClement from "../assets/AmanClement.jpeg";
