@@ -20,7 +20,7 @@ function Dhabawale() {
             as="h1"
             fontSize={{ base: "2xl", md: "4xl" }}
             maxW={{ base: "sm", md: "xl", lg: "4xl" }}
-            paddingBottom={6}
+            paddingtop={6}
           >
             <br></br>
             Meet The Team -
@@ -30,7 +30,7 @@ function Dhabawale() {
             as="h1"
             fontSize={{ base: "2xl", md: "3xl" }}
             maxW={{ base: "sm", md: "xl", lg: "2xl" }}
-            paddingBottom={6}
+            paddingtop={6}
             textDecoration="underline"
           >
             Dange Dhaba
@@ -43,7 +43,7 @@ function Dhabawale() {
         className="collection"
         maxW={{ base: "sm", md: "xl", lg: "xl" }}
         margin="0 auto"
-        width="90%"
+        width="75%"
       >
         <Box
           marginTop="50px"
@@ -55,8 +55,8 @@ function Dhabawale() {
           <Tooltip
             label="Ayush Jain"
             bg="#FF9F1C"
-            placement="bottom"
-            arrowPadding={35}
+            placement="top"
+            arrowPadding={25}
             gutter={20}
           >
             <Link href="https://www.linkedin.com/in/ayush-jain-b4540a17b">
@@ -75,7 +75,7 @@ function Dhabawale() {
           <Tooltip
             label="Aman Clement"
             bg="#FF9F1C"
-            placement="bottom"
+            placement="top"
             arrowPadding={25}
             gutter={20}
           >
@@ -96,7 +96,7 @@ function Dhabawale() {
           <Tooltip
             label="Dhruv Dange"
             bg="#FF9F1C"
-            placement="bottom"
+            placement="top"
             arrowPadding={25}
             gutter={20}
           >
@@ -114,6 +114,7 @@ function Dhabawale() {
                 src={DhruvDange}
                 alt="m"
               />
+              <br />
             </Link>
           </Tooltip>
         </Box>
