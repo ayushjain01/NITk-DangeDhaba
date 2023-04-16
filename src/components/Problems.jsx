@@ -15,7 +15,6 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import "./style.css";
-import ARImage from "../assets/Landing/whyAR.webp";
 
 import { ReactElement } from "react";
 
