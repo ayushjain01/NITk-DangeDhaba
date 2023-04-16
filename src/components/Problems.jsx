@@ -15,7 +15,7 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import "./style.css";
-
+import whyAr from "../assets/Landing/whyAr.webp";
 import { ReactElement } from "react";
 
 import {
@@ -93,7 +93,7 @@ const Problems = () => {
             mx={"auto"}
             mt={5}
             borderRadius={10}
-            src="./src/assets/Landing/whyAr.webp"
+            src={whyAr}
             h={[40, 40, 60]}
             w={[60, 60, 80]}
           />

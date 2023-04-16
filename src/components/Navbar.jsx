@@ -18,6 +18,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
+import Logo from "../assets/logo.png";
 
 const Links = ["Home", "Learn", "Team"];
 
@@ -55,7 +56,7 @@ export default function withAction() {
             <Link href="#top">
               {" "}
               <Box>
-                <Image width={"100px"} src="./src/assets/logo.png" />
+                <Image width={"100px"} src={Logo} />
               </Box>
             </Link>
             <HStack

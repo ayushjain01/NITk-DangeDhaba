@@ -16,6 +16,10 @@ import {
 import { BiChevronRight } from "react-icons/bi";
 import { useState, useEffect } from "react";
 import "./style.css";
+import img1 from "../assets/Landing/1.webp";
+import img2 from "../assets/Landing/2.webp";
+import img3 from "../assets/Landing/3.png";
+import img4 from "../assets/Landing/4.png";
 
 function useLoopingText(texts, interval) {
   const [textIndex, setTextIndex] = useState(0);
@@ -42,10 +46,10 @@ const Whatisthis = ({ ...rest }) => {
   ];
   const texts2 = ["and learn", "definitions", "the next level", "learning"];
   const imagePath = [
-    "./src/assets/Landing/1.webp",
-    "./src/assets/Landing/2.webp",
-    "./src/assets/Landing/3.png",
-    "./src/assets/Landing/4.png",
+    img1,
+    img2,
+    img3,
+    img4,
   ];
   const loopingText1 = useLoopingText(texts1, 5000);
   const loopingText2 = useLoopingText(texts2, 5000);

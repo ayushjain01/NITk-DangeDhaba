@@ -15,7 +15,10 @@ import {
   Spacer
 } from "@chakra-ui/react";
 import "./style.css";
-
+import sub1 from '../assets/Landing/Sub1.webp';
+import sub2 from '../assets/Landing/Sub2.webp';
+import sub3 from '../assets/Landing/Sub3.webp';
+import sub4 from '../assets/Landing/Sub4.webp';
 
 import { ReactElement } from "react";
 
@@ -55,7 +58,7 @@ const Subjects = () => {
             >
               <Image
               bg = "#ff91bd" className = "shadowBox-1" w = "40%"src={
-                './src/assets/Landing/Sub1.webp'
+                sub1
               }
               borderRadius="15px"
                 objectFit="contain"
@@ -87,7 +90,7 @@ const Subjects = () => {
             >
               <Image
               bg = "#c280f2" className = "shadowBox-2" w = "40%"src={
-                './src/assets/Landing/Sub2.webp'
+                sub2
               }
               borderRadius="15px"
                 objectFit="contain"
@@ -119,7 +122,7 @@ const Subjects = () => {
             >
               <Image
               bg = "#fcd658" className = "shadowBox-3" w = "40%"src={
-                './src/assets/Landing/Sub3.webp'
+                sub3
               }
               borderRadius="15px"
                 objectFit="contain"
@@ -151,7 +154,7 @@ const Subjects = () => {
             >
               <Image
               bg = "#5be9fc" className = "shadowBox-4" w = "40%"src={
-                './src/assets/Landing/Sub4.webp'
+                sub4
               }
               borderRadius="15px"
                 objectFit="contain"
