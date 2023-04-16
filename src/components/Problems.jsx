@@ -39,7 +39,6 @@ const Problems = () => {
           <Text
             fontSize={{ base: "sm", sm: "lg" }}
             color={"gray.800"}
-            fontFamily={"mono"}
             fontWeight={"bold"}
           >
             More than half of secondary schools in India do not have science labs.
@@ -57,9 +56,8 @@ const Problems = () => {
           <Text
             fontSize={{ base: "sm", sm: "lg" }}
             color={"gray.600"}
-            fontFamily={"mono"}
           >
-            Traditional education can be boring and unengaging for many
+            Traditional education can be boring and engaging for many
             students. Many schools and classrooms do not have access to the
             latest textbooks, tools, or equipment thus, several students
             struggle with visualizing abstract concepts, such as complex
@@ -75,7 +73,7 @@ const Problems = () => {
         <center>
           {" "}
           <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
-            Why US?
+            Why Us?
           </Heading>
         </center>
         <Spacer h={35} />
@@ -101,7 +99,6 @@ const Problems = () => {
           <Text
             fontSize={{ base: "sm", sm: "lg" }}
             color={"gray.600"}
-            fontFamily={"mono"}
           >
             <b>We provide AR solutions for the web! NO APP Required!</b>{" "}
             Augmented reality education can address the challenges of
