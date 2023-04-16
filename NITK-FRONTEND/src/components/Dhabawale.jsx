@@ -7,11 +7,13 @@ import DhruvDange from "../assets/DhruvDange.jpeg";
 function Dhabawale() {
   return (
     <Box
+      id="Team"
       sx={{
         textAlign: "center",
         fontSize: "64px",
-        color: "#2EC4B6",
+        color: "#262627",
       }}
+      marginBottom="100px"
     >
       <Box display="flex" justifyContent="center" justifyItems="center">
         <Box textAlign="center">
@@ -59,13 +61,18 @@ function Dhabawale() {
             arrowPadding={25}
             gutter={20}
           >
-            <Link href="https://www.linkedin.com/in/ayush-jain-b4540a17b">
+            <Link
+              href="https://www.linkedin.com/in/ayush-jain-b4540a17b"
+              boxSize={{ base: "100px", md: "150px" }}
+              borderRadius="50%"
+              border="5px solid #f7f7f7"
+              sx={{ filter: "drop-shadow(-20px 0 10px rgba(0,0,0,0.1))" }}
+              _hover={{ transform: "translateY(25px)" }}
+              cursor="pointer"
+            >
               <Image
                 boxSize={{ base: "100px", md: "150px" }}
                 borderRadius="50%"
-                border="5px solid #f7f7f7"
-                sx={{ filter: "drop-shadow(-20px 0 10px rgba(0,0,0,0.1))" }}
-                _hover={{ transform: "translateY(25px)" }}
                 cursor="pointer"
                 src={Apples}
                 alt="Your"
@@ -79,15 +86,18 @@ function Dhabawale() {
             arrowPadding={25}
             gutter={20}
           >
-            <Link href="https://www.linkedin.com/in/aman-aranha-13a4a6204/">
+            <Link
+              boxSize={{ base: "100px", md: "150px" }}
+              borderRadius="50%"
+              border="5px solid #f7f7f7"
+              sx={{ filter: "drop-shadow(-20px 0 10px rgba(0,0,0,0.1))" }}
+              _hover={{ transform: "translateY(25px)" }}
+              cursor="pointer"
+              href="https://www.linkedin.com/in/aman-aranha-13a4a6204/"
+            >
               <Image
                 boxSize={{ base: "100px", md: "150px" }}
                 borderRadius="50%"
-                border="5px solid #f7f7f7"
-                ml="-20px"
-                sx={{ filter: "drop-shadow(20px 20px 20px rgba(0,0,0,0.1))" }}
-                _hover={{ transform: "translateY(25px)" }}
-                cursor="pointer"
                 src={AmanClement}
                 alt="mo"
               />
@@ -101,20 +111,20 @@ function Dhabawale() {
             gutter={20}
           >
             <Link
+              boxSize={{ base: "100px", md: "150px" }}
+              borderRadius="50%"
+              border="5px solid #f7f7f7"
+              sx={{ filter: "drop-shadow(-20px 0 10px rgba(0,0,0,0.1))" }}
+              _hover={{ transform: "translateY(25px)" }}
+              cursor="pointer"
               href="https://www.linkedin.com/in/dhruv-dange/"
             >
               <Image
                 boxSize={{ base: "100px", md: "150px" }}
                 borderRadius="50%"
-                border="5px solid #f7f7f7"
-                ml="-20px"
-                sx={{ filter: "drop-shadow(20px 0 10px rgba(0,0,0,0.1))" }}
-                _hover={{ transform: "translateY(25px)" }}
-                cursor="pointer"
                 src={DhruvDange}
                 alt="m"
               />
-              <br />
             </Link>
           </Tooltip>
         </Box>
