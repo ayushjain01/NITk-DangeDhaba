@@ -30,7 +30,7 @@ import {
 const Subjects = () => {
   return (
     <>
-      <Box id = "learn" p={4}>
+      <Box id = "Learn" p={4}>
         <Stack spacing={4} as={Container} maxW={"3xl"} margin = "auto" textAlign={"center"}>
           <br>
           </br><Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>

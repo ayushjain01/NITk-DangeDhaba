@@ -51,7 +51,7 @@ const Whatisthis = ({ ...rest }) => {
   const loopingText2 = useLoopingText(texts2, 5000);
   const imageSlide = useLoopingText(imagePath, 5000);
   return (
-    <Box bg="#262627" height="100vh" py="10" color="white"  >
+    <Box bg="#262627" height="100vh" py="10" color="white" id="Home" >
       <Flex direction={{base:"column",md:"row"}} alignItems="center" flexWrap="wrap">
         <Spacer />
         <Hide breakpoint='(max-width: 786px)'>
