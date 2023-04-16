@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar,Whatisthis,Subjects,Dhabawale} from '../components'
+import {Navbar,Whatisthis,Subjects,Dhabawale,Footer} from '../components'
 
 const LandingPage = () => {
     return ( 
@@ -8,6 +8,7 @@ const LandingPage = () => {
             <Whatisthis />
             <Subjects   />
             <Dhabawale />
+            <Footer/>
         </div>
      );
 }
