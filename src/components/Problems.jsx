@@ -94,7 +94,7 @@ const Problems = () => {
             mx={"auto"}
             mt={5}
             borderRadius={10}
-            src={ARImage}
+            src="./src/assets/Landing/whyAr.webp"
             h={[40, 40, 60]}
             w={[60, 60, 80]}
           />
