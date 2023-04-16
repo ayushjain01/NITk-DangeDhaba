@@ -6,9 +6,8 @@ const LandingPage = () => {
         <div className="LandingPage">
             <Navbar />
             <Whatisthis />
-            <Subjects />
+            <Subjects   />
             <Dhabawale />
-            
         </div>
      );
 }

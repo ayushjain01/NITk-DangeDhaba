@@ -31,8 +31,7 @@ const NavLink = ({ children }) => (
       textDecoration: 'none',
       bg: useColorModeValue('#2EC4B6'),
     }}
-    href={'#'}>
-    {children}
+    href={'#'+children}>
   </Link>
 );
 
@@ -76,7 +75,7 @@ export default function withAction() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
+          <Box pb={4} color = "white" display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>

@@ -40,7 +40,7 @@ const Whatisthis = ({ ...rest }) => {
     "Progress to",
     "Augmented",
   ];
-  const texts2 = ["and learn", "the definitions", "the next level", "learning"];
+  const texts2 = ["and learn", "definitions", "the next level", "learning"];
   const imagePath = [
     "./src/assets/Landing/1.webp",
     "./src/assets/Landing/2.webp",
@@ -52,7 +52,7 @@ const Whatisthis = ({ ...rest }) => {
   const imageSlide = useLoopingText(imagePath, 5000);
   return (
     <Box bg="#262627" height="100vh" py="10" color="white"  >
-      <Flex alignItems="center">
+      <Flex direction={{base:"column",md:"row"}} alignItems="center" flexWrap="wrap">
         <Spacer />
         <Hide breakpoint='(max-width: 786px)'>
         <Heading
@@ -79,7 +79,8 @@ const Whatisthis = ({ ...rest }) => {
           className="imageAnimate"
           position="relative"
           float="right"
-          width={["400px","600px"]}
+          width={["400px","500px"]}
+          marginTop="100px"
           px="14"
           src={imageSlide}
         />
@@ -107,7 +108,7 @@ const Whatisthis = ({ ...rest }) => {
           </span>
         </Heading>
         <Image
-        position={'absolute'}
+        position={'relativeDescendant'}
         top={'40vh'}
           className="imageAnimate"
           display={"block"}
@@ -118,9 +119,7 @@ const Whatisthis = ({ ...rest }) => {
           </VStack>
         
         </Show>
-
-      </Flex>
-      <Box position={'absolute'} top={'90vh'} w={'100vw'}>
+      <Box marginTop="10" w={'100vw'}>
       <Center>
         <Link href = "#"> <Button rightIcon={<BiChevronRight />} bg="#2EC4B6"> 
           Start Learning
@@ -140,6 +139,8 @@ const Whatisthis = ({ ...rest }) => {
         </Link>
       </Center>
       </Box>
+      </Flex>
+      
     </Box>
   );
 };

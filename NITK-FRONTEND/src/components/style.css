@@ -12,7 +12,7 @@
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 60% }
 }
 
 /* The typewriter cursor effect */
@@ -52,4 +52,17 @@
   @-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
+  }
+
+  .shadowBox-1 {
+    box-shadow: 0px 0px 56px -4px #ff6ba9;
+  }
+  .shadowBox-2 {
+    box-shadow: 0px 0px 56px -4px #daa8ff;
+  }
+  .shadowBox-3 {
+    box-shadow: 0px 0px 56px -4px #fcedbb;
+  }
+  .shadowBox-4 {
+    box-shadow: 0px 0px 56px -4px #99f3ff;
   }
