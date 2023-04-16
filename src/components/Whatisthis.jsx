@@ -125,7 +125,7 @@ const Whatisthis = ({ ...rest }) => {
         </Show>
       <Box marginTop="10" w={'100vw'}>
       <Center>
-        <Link href = "#"> <Button rightIcon={<BiChevronRight />} bg="#2EC4B6"> 
+        <Link href = "#Learn"> <Button rightIcon={<BiChevronRight />} bg="#2EC4B6"> 
           Start Learning
         </Button></Link>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
