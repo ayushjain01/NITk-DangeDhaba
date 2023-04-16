@@ -72,7 +72,7 @@ const Subjects = () => {
                 </CardBody>
 
                 <CardFooter>
-                  <Link href = "https://physics-neon.vercel.app/" >
+                  <Link href = "https://phy-nu.vercel.app/" >
                   <Button color = "white" variant="solid" bg = "#2EC4B6" >
                     Learn Physics
                   </Button></Link>
