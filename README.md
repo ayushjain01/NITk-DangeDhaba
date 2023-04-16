@@ -38,7 +38,8 @@ git clone https://github.com/ayushjain01/NITk-DangeDhaba.git
 
 ## How to Test?
 
-### ps. We suggest you open the deployed link on your phone, since you require a camera, but even a laptop with a webcam will work.
+#### ps. We suggest you open the deployed link on your phone, since you require a camera, but even a laptop with a webcam will work.
+You also require a second device (preferrably a laptop), to test the AR Experience.
 
 1. Once you've completing installing all dependencies, open your browser and choose any of the following subjects. Alternativeliy you can also visit - <link> on your mobile.
  
